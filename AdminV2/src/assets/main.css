@@ -1,0 +1,46 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  h1{
+    @apply text-[24px];
+  }
+
+}
+@layer components {
+
+  input {
+    @apply   border outline-1 h-8 rounded-lg pl-6
+  }
+  .menu-link {
+    @apply w-[85px] h-[85px] flex justify-between items-center;
+  }
+  .menu-link svg {
+    @apply w-[28px] h-[28px] flex items-center justify-center rounded my-4;
+  }
+  .router-link-active.menu-link {
+    @apply border-b-[3px] rounded-l text-oceanblue  border-amberred;
+  }
+  .hover-menu {
+    @apply z-50 transition absolute left-[70px] h-[65px] p-4  rounded font-bold flex items-center shadow-2xl  opacity-0 pointer-events-none -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100;
+  }
+  h1{
+    @apply text-[28px]
+  }
+  p{
+    @apply text-[14px] font-primary font-semibold m-0
+  }
+  .linear{
+    background: linear-gradient(180deg, rgba(248,228,204,1) 14%, rgba(248,228,204,1) 92%, rgba(48,34,10,0.6839110644257703) 100%) 
+  }
+  .linearleft{
+    background: linear-gradient(270deg, rgba(248,228,204,1) 14%, rgba(248,228,204,1) 99%, rgba(48,34,10,0.6839110644257703) 100%) 
+  }
+
+
+@layer utilities {
+
+}
+}
