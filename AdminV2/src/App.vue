@@ -6,8 +6,6 @@ const route = useRoute();
 </script>
 
 <template>
-
-  <TopMenu/>
   <router-view/>
 </template>
 
@@ -17,18 +15,29 @@ const route = useRoute();
   src: url('./fonts/futura/3954.eot');
   src: local('3954'), url('./fonts/futura/3954.woff') format('woff'), url('./fonts/futura/3954.ttf') format('truetype');
 }
-h1,
+h1{
+  font-family: "auster", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  color: white;
+}
 h2,
 h3,
 h4 {
 
-  font-family: 'Open Sans', sans-serif;
+  font-family:'Poppins', sans-serif;
 }
 h3{
   text-transform: capitalize;
 }
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: black;
+}
+h2{
+  color: #fafafafa;
+  font-size: medium;
 }
 
 

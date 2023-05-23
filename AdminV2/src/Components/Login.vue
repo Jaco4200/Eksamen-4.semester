@@ -1,8 +1,73 @@
 <template>
-  
+  <div
+    class="h-[400px] w-[300px] absolute z-50 right-0 top-16 rounded-bl-lg rounded-tl-lg flex overflow-x-hidden justify-start items-center flex-col bg-white">
+      <CustomInput
+      class="absolute h-[69px]"
+      v-model="loginCredentials.name"
+      :label="'Brugernavn'"
+      :borderColor="'#000000'"
+      :placeholder="'Brugernavn'"
+      ref="navn"
+      :name="'brugernavn'"
+      />
+      <CustomInput
+      class="absolute h-[69px]"
+      v-model="loginCredentials.password"
+      type="password"
+      :label="'Adgangskode'"
+      :borderColor="'#000000'"
+      :placeholder="'Adgangskode'"
+      ref="navn"
+      :name="'Kode'"
+      />
+      <p class="w-full flex justify-end mr-20 mt-2">glemt din kode?
+      </p>
+      <ButtonComp
+      @click.prevent="loginF(loginCredentials)"
+      class="w-5/6 h-10 text-white bg-oceanblue mt-10 rounded-lg mb-10 transition-all hover:opacity-70"
+      button-text="Login"
+      :loading="loading === 'login'"
+      :loadDone="loadDone === 'login'"
+      :loadErr="loadErr === 'login'"
+      />
+      <p>har du ikke en bruger?</p>
+      <a>Opret dig her</a>
+  </div>
 </template>
 
 <script setup>
+import { ref, reactive } from 'vue';
+import { useMainStore } from '../stores/main';
+
+const store = useMainStore();
+const loading = ref(null);
+const loadDone = ref(null);
+const loadErr = ref(null);
+const loginCredentials = reactive({
+    name: null,
+    password: null
+})
+
+const loginF = (credentials) => {
+  loading.value = 'login';
+  store.login(credentials).then(
+    (res) => {
+    if (res.status === 200) {
+      loading.value = ''
+      loadDone.value = 'login'
+      setTimeout(() => {
+        loadDone.value = ''
+        store.loggedIn = true;
+      }, 2000);}
+    else{
+        loading.value = ''
+        loadErr.value = 'login'
+        setTimeout(() => {
+            loadErr.value = ''
+        }, 2000);
+    }
+    })
+}
 
 </script>
 

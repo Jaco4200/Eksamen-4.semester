@@ -15,16 +15,13 @@
     @apply   border outline-1 h-8 rounded-lg pl-6
   }
   .menu-link {
-    @apply w-[85px] h-[85px] flex justify-between items-center;
+    @apply flex h-8 absolute justify-between items-center border-white;
   }
-  .menu-link svg {
-    @apply w-[28px] h-[28px] flex items-center justify-center rounded my-4;
+  .menu-link:hover {
+    @apply border-b-[4px] transition-all border-white;
   }
   .router-link-active.menu-link {
-    @apply border-b-[3px] rounded-l text-oceanblue  border-amberred;
-  }
-  .hover-menu {
-    @apply z-50 transition absolute left-[70px] h-[65px] p-4  rounded font-bold flex items-center shadow-2xl  opacity-0 pointer-events-none -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100;
+    @apply border-b-[4px] border-white;
   }
   h1{
     @apply text-[28px]
@@ -38,7 +35,9 @@
   .linearleft{
     background: linear-gradient(270deg, rgba(248,228,204,1) 14%, rgba(248,228,204,1) 99%, rgba(48,34,10,0.6839110644257703) 100%) 
   }
-
+  .banner-bar{
+    @apply cursor-pointer
+  }
 
 @layer utilities {
 

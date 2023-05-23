@@ -5,7 +5,9 @@ export const useMainStore = defineStore({
   id: 'main',
   state: () => ({
     users: [{}],
-    user: []
+    user: [],
+    loggedIn: false,
+
   }),
   getters: {
 
@@ -51,6 +53,7 @@ export const useMainStore = defineStore({
       })
     },
     login(credentials) {
+      return new Promise((resolve, reject) => {
       axios
       .post(
         '/login', {
@@ -62,10 +65,13 @@ export const useMainStore = defineStore({
         console.log(res)
         this.user = res.data.recordset[0]
         console.log(this.user.fornavn)
+        resolve(res)
       })
       .catch((error) => {
         console.log(error)
+        resolve(error)
       })
+    })
     },
     flipMedlem(user) {
       axios

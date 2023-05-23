@@ -14,6 +14,8 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import PrimeVue from 'primevue/config'
 import { useMainStore } from './stores/main';
+import CustomInput from './Components/CustomInput.vue'
+import ButtonComp from './Components/ButtonComp.vue'
 library.add(icons);
 dom.watch();
 
@@ -24,9 +26,8 @@ pinia.use(({ store }) => {
   });
 app.use(pinia);
 const store = useMainStore();
-app.component(
-  
-  )
+app.component('CustomInput', CustomInput)
+app.component('ButtonComp', ButtonComp)
 app.use(router);
 app.use(PrimeVue);
 
