@@ -27,7 +27,7 @@
     @apply text-[28px]
   }
   p{
-    @apply text-[14px] font-primary font-semibold m-0
+    @apply text-[14px] font-primary font-light m-0
   }
   .linear{
     background: linear-gradient(180deg, rgba(248,228,204,1) 14%, rgba(248,228,204,1) 92%, rgba(48,34,10,0.6839110644257703) 100%) 

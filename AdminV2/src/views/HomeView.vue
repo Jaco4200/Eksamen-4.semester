@@ -1,18 +1,23 @@
 <template>
-  <div>
+  <div class="w-full max-w-[1920px] overflow-x-hidden">
   <Banner>
   <TopMenu/>
     </Banner>
-    <h1 class="text-black text-4xl w-screen text-center">Welkommen til bronx</h1>
-  <CreateUser/>
+    <h1 class="text-black text-4xl text-center">Velkommen til Bronx
+    </h1>
+    <h2 class="text-black text-center pt-4">Forvandl de kedelige aftener til gode vendskaber gennem spændende og sjove aktiviteter.</h2>
+  <Aktivitet/>
+  <Testies/>
+  <FooterComp/>
 </div>
 </template>
 
 <script setup>
+import Aktivitet from '../Components/Aktivitet.vue';
 import Banner from '../components/Banner.vue';
-import CreateUser from '../components/CreateUser.vue';
 import TopMenu from '../Components/TopMenu.vue';
-
+import FooterComp from '../Components/FooterComp.vue';
+import Testies from '../Components/Testies.vue';
 </script>
 
 <style>

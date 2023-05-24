@@ -1,10 +1,10 @@
 <template>
-<div class="w-screen h-[60vh] absolute bg-transparent overflow-x-hidden z-50">
-  <div class="w-screen h-20 absolute bg-transparent z-50 px-12 flex gap-2 items-center justify-between">
+<div class="w-[calc(100vw-10px)] h-[60vh] absolute bg-transparent overflow-x-hidden z-50">
+  <div class="w-[calc(100vw-10px)] pt-14 h-20 absolute bg-transparent z-50 px-28 flex gap-2 items-center justify-between">
     <div class="w-1/6">
         <img src="../assets/logo.svg" alt="Bronx-logo" class=" h-8">
     </div>
-    <div class="w-4/6  flex flex-row items-center justify-between px-52 ">
+    <div class="w-4/6  flex flex-row items-center justify-between md:px-12 2xl:px-48 3xl:px-64 ">
           <router-link :to="{ name: 'home' }" class="menu-link group w-[85px] justify-center relative">
             <h2>Hjem</h2>
           </router-link>

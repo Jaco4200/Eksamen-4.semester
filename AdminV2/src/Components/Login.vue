@@ -20,18 +20,20 @@
       ref="navn"
       :name="'Kode'"
       />
-      <p class="w-full flex justify-end mr-20 mt-2">glemt din kode?
+      <p class="w-full flex justify-end mr-14 mt-1">glemt din kode?
       </p>
       <ButtonComp
       @click.prevent="loginF(loginCredentials)"
-      class="w-5/6 h-10 text-white bg-oceanblue mt-10 rounded-lg mb-10 transition-all hover:opacity-70"
+      class="w-5/6 h-10 text-white bg-oceanblue mt-10 rounded-lg transition-all hover:opacity-70"
       button-text="Login"
       :loading="loading === 'login'"
       :loadDone="loadDone === 'login'"
       :loadErr="loadErr === 'login'"
       />
-      <p>har du ikke en bruger?</p>
-      <a>Opret dig her</a>
+      <div class="w-full h-1/6 flex flex-col items-center">
+      <p class="h-3/6 mt-16">har du ikke en bruger?</p>
+      <a class="mt-2 h-3/6 mb-16"><p class="text-oceanblue">Opret dig her</p></a>
+    </div>
   </div>
 </template>
 

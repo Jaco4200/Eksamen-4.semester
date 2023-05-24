@@ -5,6 +5,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,vue}'],
   theme: {
     screens: {
+
+      'xs': '350px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -19,6 +22,7 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      '3xl': '1920px',
       },
 
     extend: {
@@ -29,6 +33,9 @@ module.exports = {
           },
           '50%': {'border-color': '#000'},
         }
+      },
+      backgroundImage: {
+        'testies': "url('/src/assets/billeder/testies.svg')",
       },
       boxShadow: {
         
@@ -45,8 +52,8 @@ module.exports = {
       'sandbeige': '#D7CFA9',
       'brown': '#4B2A23',
       'orange': '#E98D21',
-      'white': '#FFF',
-      'black': '#000000',
+      'white': '#F9F9F9',
+      'black': '#1D1D1D',
     },
     fontFamily: {
       primary: ['Roboto', 'sans-serif'],
