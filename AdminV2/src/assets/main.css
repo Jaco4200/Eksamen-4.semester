@@ -15,13 +15,13 @@
     @apply   border outline-1 h-8 rounded-lg pl-6
   }
   .menu-link {
-    @apply flex h-8 absolute justify-between items-center border-white;
+    @apply flex h-8 absolute justify-between items-center border-whitebronx;
   }
   .menu-link:hover {
-    @apply border-b-[4px] transition-all border-white;
+    @apply border-b-[4px] transition-all border-whitebronx;
   }
   .router-link-active.menu-link {
-    @apply border-b-[4px] border-white;
+    @apply border-b-[4px] border-whitebronx;
   }
   h1{
     @apply text-[28px]

@@ -35,7 +35,8 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'testies': "url('/src/assets/billeder/testies.svg')",
+        'testies': "url('/src/assets/billeder/kundeudtalelse_vector.svg')",
+        'aktivitet2': "url('/src/assets/billeder/aktivitet2.svg)",
       },
       boxShadow: {
         
@@ -52,7 +53,7 @@ module.exports = {
       'sandbeige': '#D7CFA9',
       'brown': '#4B2A23',
       'orange': '#E98D21',
-      'white': '#F9F9F9',
+      'whitebronx': '#F9F9F9',
       'black': '#1D1D1D',
     },
     fontFamily: {

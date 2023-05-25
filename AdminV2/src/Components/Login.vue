@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-[400px] w-[300px] absolute z-50 right-0 top-16 rounded-bl-lg rounded-tl-lg flex overflow-x-hidden justify-start items-center flex-col bg-white">
+    class="h-[400px] w-[300px] absolute z-50 right-0 top-24 rounded-bl-lg rounded-tl-lg flex overflow-x-hidden justify-start items-center flex-col bg-whitebronx">
       <CustomInput
       class="absolute h-[69px]"
       v-model="loginCredentials.name"

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-[1920px] overflow-x-hidden">
+  <div class="w-full max-w-[1920px] bg-whitebronx overflow-x-hidden">
   <Banner>
   <TopMenu/>
     </Banner>

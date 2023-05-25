@@ -24,7 +24,7 @@
         v-if="store.loggedIn === false"
         button-text="Login"
         @click.prevent="login =! login"
-        class="w-[130px] h-[40px] hover:bg-white hover:text-black border-2 transition-all rounded-md border-white"/>
+        class="w-[130px] h-[40px] hover:bg-whitebronx hover:text-black border-2 transition-all text-whitebronx rounded-md border-whitebronx"/>
         <div
         v-else
         @click.prevent="user =! user"
