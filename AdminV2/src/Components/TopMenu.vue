@@ -47,7 +47,7 @@
             <h2>Medlemsskab</h2>
           </router-link></div>
   </div>
-    <div class=" xs:w-2/6 md:w-1/6 flex bg-transparent justify-end text-white">
+    <div class=" xs:w-2/6 md:w-1/6 flex justify-end text-white">
         <ButtonComp
         v-if="store.loggedIn === false"
         button-text="Login"

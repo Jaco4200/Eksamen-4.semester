@@ -35,17 +35,19 @@
     <div class="flex flex-row items-center justify-center bg-whitebronx">
       <h1 class="text-black py-20">Vores fantastiske sponsorer &nbsp;</h1><h1 class="text-amberred text-3xl">&hearts; </h1>
     </div>
-    <div class="flex flex-row h-20 w-full+ py-28">
-      <img src="../assets/billeder/rodkors.svg" alt="">
-      <img src="../assets/billeder/avg.svg" alt="">
-      <img src="../assets/billeder/stops.svg" alt="">
-      <img src="../assets/billeder/odnsreno.svg" alt="">
+    <div class="lg:flex flex-row justify-between gap-6 justify-center items-center bg-whitebronx xs:grid xs:grid-cols-1 w-full pb-20 xs:px-6 lg:px-28">
+      <img src="../assets/billeder/kors.png" class="w-full" alt="">
+      <img src="../assets/billeder/aof.png" class="w-full" alt="">
+      <img src="../assets/billeder/stop.png" class="w-full" alt="">
+      <img src="../assets/billeder/reno.png" class="w-full" alt="">
     </div>
+    <FooterComp/>
   </div>
 </template>
 
 <script setup>
 
+import FooterComp from '../Components/FooterComp.vue';
 import TopMenu from '../Components/TopMenu.vue'
 </script>
 
