@@ -50,7 +50,7 @@ module.exports = {
     },
     colors: {
       'amberred': '#B64C27',
-      'oceanblue': '#5A75C9',
+      'oceanblue': '#45749F',
       'sandbeige': '#D7CFA9',
       'brown': '#4B2A23',
       'orange': '#E98D21',

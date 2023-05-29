@@ -81,9 +81,11 @@ import { faClone } from '@fortawesome/pro-light-svg-icons/faClone';
 import { faQuestion } from '@fortawesome/pro-light-svg-icons/faQuestion';
 import { faCircleP } from '@fortawesome/pro-light-svg-icons/faCircleP';
 import { faParagraph } from '@fortawesome/pro-light-svg-icons/faParagraph';
-import { faRecycle } from '@fortawesome/pro-light-svg-icons';
+import { faRecycle } from '@fortawesome/pro-light-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/pro-light-svg-icons';
 export default {
   faTrash,
+  faArrowUpRightFromSquare,
   faRecycle,
   faShop,
   faUpload,

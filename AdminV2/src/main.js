@@ -16,6 +16,7 @@ import PrimeVue from 'primevue/config'
 import { useMainStore } from './stores/main';
 import CustomInput from './Components/CustomInput.vue'
 import ButtonComp from './Components/ButtonComp.vue'
+import { ref } from 'vue'
 library.add(icons);
 dom.watch();
 
@@ -30,6 +31,8 @@ app.component('CustomInput', CustomInput)
 app.component('ButtonComp', ButtonComp)
 app.use(router);
 app.use(PrimeVue);
+
+app.config.globalProperties.aktivitetShow = ref("");
 
 app.use(VueAxios, axios);
 axios.defaults.baseURL = 'http://localhost:6969'
