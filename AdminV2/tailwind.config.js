@@ -37,6 +37,7 @@ module.exports = {
       backgroundImage: {
         'testies': "url('/src/assets/billeder/kundeudtalelse_vector.svg')",
         'aktivitet2': "url('/src/assets/billeder/aktivitet2.svg)",
+        'kalender': "url('/src/assets/billeder/kalenderbanner.svg)",
       },
       boxShadow: {
         
