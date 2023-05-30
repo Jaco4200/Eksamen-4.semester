@@ -35,7 +35,7 @@ app.use(PrimeVue);
 app.config.globalProperties.aktivitetShow = ref("");
 
 app.use(VueAxios, axios);
-axios.defaults.baseURL = 'http://localhost:6969'
+axios.defaults.baseURL = 'https://eksamen-backendapi.onrender.com'
 app.mount('#app');
 axios.interceptors.request.use(function (config) {
   if (!config.url.includes('login')) {

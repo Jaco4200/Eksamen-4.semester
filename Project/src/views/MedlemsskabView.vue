@@ -23,11 +23,20 @@ class="bg-oceanblue xs:w-2/6 xl:w-1/6 text-whitebronx"
 button-text="Bliv Medlem"> </ButtonComp>        
 </div>
     </div>
-
-
-<Modal v-model:visible="isVisible">
-    <div>your content...</div>
-</Modal>
+    <div v-if="isVisible === false" class="modal-content px-6 w-[600px] absolute top-64 left-0 m-auto right-0 bg-whitebronx h-[550px]">
+  <div class="flex w-[400px] h-6 flex-row items-center gap-4">
+    <button @click.prevent="isVisible = false;" class="text-3xl cursor-pointer">&times;</button> <h1 class="text-sm h-7 flex items-end text-black font-primary">Opret dig som medlem</h1>
+  </div>
+  <div class="modal-body">
+    <div class="bg-whitebronx p-0">
+    
+    </div>
+    <ButtonComp
+    button-text="Registrer"
+    class="w-[200px] ml-6 mt-4 bg-oceanblue text-whitebronx "
+    @click.prevent="registerUser(registerCredentials)"/>
+  </div>
+</div>
   <FooterComp/>
 </div>
 </template>
@@ -44,5 +53,14 @@ const store = useMainStore();
 </script>
 
 <style>
+.modal-content {
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
 
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
 </style>

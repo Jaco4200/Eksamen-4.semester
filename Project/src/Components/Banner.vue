@@ -51,11 +51,27 @@
 <script setup>
 import { computed, onMounted, reactive, ref } from 'vue';
 
-const showBanner = ref('lego')
+const showBanner = ref('mads')
 const banners = ['lego', 'mads', 'film', 'mal']
+const clicked = ref(false);
 
-computed
+let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("banner")
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";
+  showBanner.value = banners[slideIndex-1];
+
+  setTimeout(showSlides, 4000)
+}
 onMounted(() => {
+    showSlides()
 })
 
 </script>
@@ -67,8 +83,15 @@ onMounted(() => {
 }
 
 @keyframes fade {
-  from {opacity: .0} 
-  to {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 </style>
