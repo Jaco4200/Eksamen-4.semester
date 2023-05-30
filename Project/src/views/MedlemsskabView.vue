@@ -23,7 +23,7 @@ class="bg-oceanblue xs:w-2/6 xl:w-1/6 text-whitebronx"
 button-text="Bliv Medlem"> </ButtonComp>        
 </div>
     </div>
-    <div v-if="isVisible === false" class="modal-content px-6 w-[600px] absolute top-64 left-0 m-auto right-0 bg-whitebronx h-[550px]">
+    <div v-if="isVisible === null" class="modal-content px-6 w-[600px] absolute top-64 left-0 m-auto right-0 bg-whitebronx h-[550px]">
   <div class="flex w-[400px] h-6 flex-row items-center gap-4">
     <button @click.prevent="isVisible = false;" class="text-3xl cursor-pointer">&times;</button> <h1 class="text-sm h-7 flex items-end text-black font-primary">Opret dig som medlem</h1>
   </div>
