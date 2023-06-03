@@ -1,20 +1,20 @@
 <template>
 <div>
-  <div class="h-[85vh] w-[calc(100vw-10px)] bg-black transition-all">
+  <div class="h-[85vh] w-[calc(100vw-10px)]  transition-all">
     <slot>
         
     </slot>
-    <div  class="banner fade bg-black">
-        <img src="../assets/billeder/legony.jpg" alt="" id="banner" class="object-cover bg-black brightness-[0.69] absolute top-0 h-[85vh] w-screen">
+    <div  class="banner fade ">
+        <img src="../assets/billeder/legony.jpg" alt="" id="banner" class="object-cover  brightness-[0.69] absolute top-0 h-[85vh] w-screen">
     </div>
-    <div  class="banner fade bg-black">
-        <img src="../assets/billeder/mads_musiker.jpg" alt="" id="banner" class="object-cover bg-black brightness-[0.69] absolute top-0 h-[85vh] w-screen">
+    <div  class="banner fade ">
+        <img src="../assets/billeder/mads_musiker.jpg" alt="" id="banner" class="object-cover  brightness-[0.69] absolute top-0 h-[85vh] w-screen">
     </div>
-    <div  class="banner fade bg-black">
-        <img src="../assets/billeder/filmaften.jpg" alt="" id="banner" class="object-cover bg-black brightness-[0.69] absolute top-0 h-[85vh] w-screen">
+    <div  class="banner fade ">
+        <img src="../assets/billeder/filmaften.jpg" alt="" id="banner" class="object-cover  brightness-[0.69] absolute top-0 h-[85vh] w-screen">
     </div>
-    <div  class="banner fade bg-black">
-        <img src="../assets/billeder/maleworkshop.jpg" alt="" id="banner" class="object-cover bg-black brightness-[0.69] absolute top-0 h-[85vh] w-screen">
+    <div  class="banner fade ">
+        <img src="../assets/billeder/maleworkshop.jpg" alt="" id="banner" class="object-cover  brightness-[0.69] absolute top-0 h-[85vh] w-screen">
     </div>
   </div>
   <div class="h-16 w-full relative text-ellipsis bottom-24 md:px-28 grid grid-cols-4 justify-center md:gap-10 lg:gap-24">
