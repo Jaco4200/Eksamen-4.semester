@@ -1,6 +1,6 @@
 <template>
 <button
-    class="h-10 text-white rounded-lg transition-all hover:opacity-70 disabled:opacity-50"
+    class=" py-5 px-[60px] text-white rounded-lg transition-all hover:bg-darkblue disabled:opacity-50"
     :disabled="loading"
     type="submit"
     @click.prevent="onClick"

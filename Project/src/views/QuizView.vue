@@ -12,16 +12,16 @@
     <router-link :to="{ name: 'home' }" class="w-6/6">
     <img src="../assets/billeder/tilbage.svg" class="h-14 mt-24" alt=""></router-link>
     <div class="w-3/6 ml-[30%] text-start">
-        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Tegn og mal workshop</h1>
-    <p class="w-4/6 opacity-[0.8] ">Dato: 26/06 - Kl. 17:30 </p>
+        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Quiz night</h1>
+    <p class="w-4/6 opacity-[0.8] ">Dato: 18/6 - Kl. 14:00    </p>
     <p class="w-3/6 opacity-[0.8]">Bronx</p>
     <p class="text-lg mt-10">
-      Frem med penslerne og blyanterne, for det er blevet tid til at finde din indre kunstner frem! 
+      Så skal de små grå i træning igen, og derfor byder vi I Bronx igen på Quiz night! Så kom og test din paratviden af, og vær med til at føre dit hold til sejeren.
 
     </p>
     <p class="text-lg mt-4 mb-52">
 
-      Vi ligger igen lokaler til din kreative side, og glæder os til at se dig, og hvad din fantasi formår at fremtrylle på dit besøg.
+      Vi glæder os til at se dig, men nu er du advaret. Der kommer ingen hints! 
 
     </p>
     </div>
@@ -41,7 +41,7 @@
     })
     </script>
     
-    <style>
+    <style scoped>
     .fade {
       animation-name: fade;
       animation-duration: 2.5s;

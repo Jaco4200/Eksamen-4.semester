@@ -1,13 +1,15 @@
 <template>
-  <div class="w-full max-w-[1920px] bg-whitebronx overflow-x-hidden">
+  <div class="w-full bg-whitebronx overflow-x-hidden">
   <Banner>
   <TopMenu/>
     </Banner>
     <h1 class="text-black text-4xl text-center">Velkommen til Bronx
     </h1>
-    <h2 class="text-black text-center pt-4">Forvandl de kedelige aftener til gode vendskaber gennem spændende og sjove aktiviteter.</h2>
+    <h2 class="text-black text-center pt-4 mb-6">Forvandl de kedelige aftener til gode vendskaber gennem spændende og sjove aktiviteter.</h2>
   <Aktivitet/>
-  <Testies/>
+  <div class="bg-whitebronx">
+    <Testies/>
+  </div>
   <BlivMedlem/>
   <FooterComp/>
 </div>

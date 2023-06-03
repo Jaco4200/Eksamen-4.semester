@@ -12,16 +12,17 @@
     <router-link :to="{ name: 'home' }" class="w-6/6">
     <img src="../assets/billeder/tilbage.svg" class="h-14 mt-24" alt=""></router-link>
     <div class="w-3/6 ml-[30%] text-start">
-        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Tegn og mal workshop</h1>
-    <p class="w-4/6 opacity-[0.8] ">Dato: 26/06 - Kl. 17:30 </p>
+        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Fællesspisning</h1>
+    <p class="w-4/6 opacity-[0.8] ">Dato: 08/06 - Kl. 18:00    </p>
     <p class="w-3/6 opacity-[0.8]">Bronx</p>
     <p class="text-lg mt-10">
-      Frem med penslerne og blyanterne, for det er blevet tid til at finde din indre kunstner frem! 
+      Er du til stærk chili, søde sager eller bare en god samtale over en varm bid mad? Så burde du komme til vores fællesspisning! 
+
 
     </p>
     <p class="text-lg mt-4 mb-52">
 
-      Vi ligger igen lokaler til din kreative side, og glæder os til at se dig, og hvad din fantasi formår at fremtrylle på dit besøg.
+      Her bliver både din smagsløg udfordret og forkælet, samtidig med du kan bryde brød og skabe relationer bogstavelig talt hen over bordet.
 
     </p>
     </div>
@@ -41,7 +42,7 @@
     })
     </script>
     
-    <style>
+    <style scoped>
     .fade {
       animation-name: fade;
       animation-duration: 2.5s;

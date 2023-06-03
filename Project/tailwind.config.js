@@ -35,8 +35,10 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'testies': "url('/src/assets/billeder/kundeudtalelse_vector.svg')",
-        'aktivitet2': "url('/src/assets/billeder/aktivitet2.svg)",
+        'testies2': "url('/src/assets/billeder/booklokaleoptimeret.png')",
+        'testies3': "url('/src/assets/billeder/booklokalealpha.png')",
+        'testies': "url('/src/assets/billeder/kundeudtalelsev2.png')",
+        'testiesmobil': "url('/src/assets/billeder/kundeudtalelsemobil.png')",
         'kalender': "url('/src/assets/billeder/kalenderbanner.svg)",
       },
       boxShadow: {
@@ -56,9 +58,15 @@ module.exports = {
       'orange': '#E98D21',
       'whitebronx': '#F9F9F9',
       'black': '#1D1D1D',
+      'dangerred': '#F32013',
+      'successgreen': '#4BB543',
+      'darkblue': '#325575',
+      'footer': '#211F2B',
+      'darken': '#747474',
+      'white': '#FFF'
     },
     fontFamily: {
-      primary: ['Roboto', 'sans-serif'],
+      primary: ['poppins', 'sans-serif'],
       secondary: ['Open Sans', 'sans-serif']
     },
   },

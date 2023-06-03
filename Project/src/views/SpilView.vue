@@ -12,16 +12,17 @@
     <router-link :to="{ name: 'home' }" class="w-6/6">
     <img src="../assets/billeder/tilbage.svg" class="h-14 mt-24" alt=""></router-link>
     <div class="w-3/6 ml-[30%] text-start">
-        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Tegn og mal workshop</h1>
-    <p class="w-4/6 opacity-[0.8] ">Dato: 26/06 - Kl. 17:30 </p>
+        <h1 class="w-4/6 mt-10 text-black mb-4 text-3xl">Brætspil aften</h1>
+    <p class="w-4/6 opacity-[0.8] ">Dato: 15/06 - Kl. 18:00
+    </p>
     <p class="w-3/6 opacity-[0.8]">Bronx</p>
     <p class="text-lg mt-10">
-      Frem med penslerne og blyanterne, for det er blevet tid til at finde din indre kunstner frem! 
+      Om du enten er mester I strategi, eller hvis du bare er heldig, kan du se frem til vores hyggelige brætspilsaften. Her venter dig massere af konkurrence og samarbejde, hvor du tage kampen op mod andre hold sammen med andre.
 
     </p>
     <p class="text-lg mt-4 mb-52">
 
-      Vi ligger igen lokaler til din kreative side, og glæder os til at se dig, og hvad din fantasi formår at fremtrylle på dit besøg.
+      Så smid saltet over venstre skulder, og kom ned og mød os til en aften i hyggens og fælleskabets tegn!
 
     </p>
     </div>
@@ -41,7 +42,7 @@
     })
     </script>
     
-    <style>
+    <style scoped>
     .fade {
       animation-name: fade;
       animation-duration: 2.5s;

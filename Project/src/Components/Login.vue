@@ -1,6 +1,9 @@
 <template>
   <div
-    class="h-[400px] w-[300px] absolute z-50 right-0 top-24 rounded-bl-lg rounded-tl-lg border-2 flex overflow-x-hidden justify-start items-center flex-col bg-whitebronx">
+    class="h-[400px] w-[300px] absolute z-[999] right-0 top-28 rounded-bl-lg rounded-tl-lg border-[1px]  flex overflow-x-hidden justify-start items-center flex-col bg-white">
+    <div class="w-full h-4 text-black flex justify-end pr-6 mt-2 cursor-pointer"><slot>
+
+    </slot></div>
       <CustomInput
       class="absolute h-[69px]"
       v-model="loginCredentials.name"
@@ -12,9 +15,9 @@
       :name="'brugernavn'"
       />
       <CustomInput
+      type="password"
       class="absolute h-[69px]"
       v-model="loginCredentials.password"
-      type="password"
       :label="'Adgangskode'"
       :borderColor="'#000000'"
       :labelBgColor="'#F9F9F9'"
@@ -24,16 +27,17 @@
       />
       <p class="w-full flex justify-end mr-14 mt-1">glemt din kode?
       </p>
+      <div v-if="store.loginerr === true" class="mt-4 text-[12px] text-dangerred px-6">Forkert brugernavn eller adgangskode</div>
       <ButtonComp
       @click.prevent="loginF(loginCredentials)"
-      class="w-5/6 h-10 text-white bg-oceanblue mt-10 rounded-lg transition-all hover:opacity-70"
+      class="w-5/6 py-2 text-whitebronx bg-oceanblue mt-4 rounded-lg transition-all"
       button-text="Login"
       :loading="loading === 'login'"
       :loadDone="loadDone === 'login'"
       :loadErr="loadErr === 'login'"
       />
       <div class="w-full h-1/6 flex flex-col items-center">
-      <p class="h-3/6 mt-16">har du ikke en bruger?</p>
+      <p class="h-3/6 mt-12">har du ikke en bruger?</p>
       <a class="mt-2 h-3/6 mb-16 cursor-pointer hover:brightness-[0.69]" @click.prevent="register = true"><p class="text-oceanblue">Opret dig her</p></a>
     </div>
     <div v-if="register === true" class="modal-content px-6 w-full absolute bg-whitebronx h-full">

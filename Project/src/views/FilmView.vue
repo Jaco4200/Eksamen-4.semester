@@ -37,7 +37,7 @@ Og du til filmmagi, popcorn og sækkestol? Så skal du med til film marathon I B
     })
     </script>
     
-    <style>
+    <style scoped>
     .fade {
       animation-name: fade;
       animation-duration: 2.5s;

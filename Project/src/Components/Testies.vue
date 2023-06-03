@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <img src="../assets/billeder/kundeudtalelsev2.png" class="w-full" alt="">
+  <div class="xs:bg-testiesmobil  lg:bg-testies bg-contain bg-no-repeat xs:h-[70vw] lg:h-[40vw]  object-contain">
   </div>
 </template>
 

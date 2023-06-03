@@ -36,7 +36,7 @@
     })
     </script>
     
-    <style>
+    <style scoped>
     .fade {
       animation-name: fade;
       animation-duration: 2.5s;
