@@ -13,11 +13,11 @@ const sql = require('mssql');
 
 
 const config = ({
-  user: CloudSA28c4ede7,
-  password: Jaco4200,
-  server: bronx.database.windows.net,
-  database: bronxkunder,
-  port: 1433,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  server: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  port: parseInt(process.env.DB_PORT),
     authentication: {
         type: 'default'
     },
